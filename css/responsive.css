@@ -11,6 +11,9 @@
     .header-top{
         display: none;
     }
+    .border-gradiant{
+        display: none;
+    }
     .ideabox-navbar-custom .navbar-brand img.logo {
         width: 70%;
     }
@@ -50,6 +53,9 @@
     }
     .navbar-toggler:hover {
         cursor: pointer;
+    }
+    footer.footer .bdr-gray-dark{
+        min-height: 135px
     }
     .ideabox-navbar-custom.navbar-dark .navbar-nav .nav-link {
         text-align: left;
