@@ -11,6 +11,9 @@
     .ideabox-navbar-custom .navbar-brand img.logo {
         width: 70%;
     }
+    ul.social-icons.social-square.social-darkest{
+        display: inline-flex;
+    }
     .ideabox-navbar-custom #navbarResponsive ul.navbar-nav {
         text-align: center;
         font-size: 17px;
