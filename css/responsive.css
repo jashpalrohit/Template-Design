@@ -8,6 +8,9 @@
         float: none;
         text-align: center;
     }
+    .header-top{
+        display: none;
+    }
     .ideabox-navbar-custom .navbar-brand img.logo {
         width: 70%;
     }
