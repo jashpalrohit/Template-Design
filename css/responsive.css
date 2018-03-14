@@ -1,0 +1,56 @@
+@media screen and (max-width:991px) {
+    .ideabox-navbar-custom {
+        border-bottom: none;
+        background: #fff;
+        padding: 0;
+    }
+    ul.social-network {
+        float: none;
+        text-align: center;
+    }
+    .ideabox-navbar-custom .navbar-brand img.logo {
+        width: 70%;
+    }
+    .ideabox-navbar-custom #navbarResponsive ul.navbar-nav {
+        text-align: center;
+        font-size: 17px;
+        padding: 0 5%;
+        background: #fff;
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-toggler {
+        border: none
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-toggler:hover, .ideabox-navbar-custom.navbar-dark .navbar-toggler:active, .ideabox-navbar-custom.navbar-dark .navbar-toggler:focus {
+        outline: none;
+        border: none;
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-nav .nav-link {
+        color: #59595b;
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+        width: 100%;
+        padding: 0 2%;
+        margin: 0
+    }
+    .icon-bar {
+        background: #FEBB1E;
+        height: 3px !important;
+        border-radius: 0;
+        -webkit-border-radius: 0 !important;
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    .navbar-toggler:hover {
+        cursor: pointer;
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-nav .nav-link {
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 5px;
+    }
+    .ideabox-navbar-custom.navbar-dark .navbar-nav li.nav-item.dropdown ul.dropdown-menu li {
+        padding: 10px
+    }
+}
