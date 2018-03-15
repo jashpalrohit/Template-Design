@@ -5,11 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>IdeaBox - Construction Template for Architect and Construction</title>
-        <meta name='description' content='IdeaBox - Creative Think Outside The Box' />
-        <meta name='keywords' content='IdeaBox - Creative Think Outside The Box' />
-        <meta name='abstract' content='IdeaBox - Creative Think Outside The Box' />
+        <meta name='description' content='IdeaBox - Construction Template for Architect and Construction' />
+        <meta name='keywords' content='IdeaBox - Construction Template for Architect and Construction' />
+        <meta name='abstract' content='IdeaBox - Construction Template for Architect and Construction' />
         <meta name='author' content='Jashpal Rohit - IdeaBox' />
         <meta name="robots" content="index,follow" />
+
+        <!--FB Meta -->
+        <meta property="og:title" content="IdeaBox" />
+        <meta property="og:description" content="IdeaBox - Construction Template for Architect and Construction"/>
+        <meta property="og:image" content="images/banner-slider/bg1.jpg" />
+        <meta property="og:image:secure_url" content="images/banner-slider/bg1.jpg" />
+        <!--Twitter Meta -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@IdeaBox">
+        <meta name="twitter:creator" content="@IdeaBox">
+        <meta name="twitter:title" content="IdeaBox">
+        <meta name="twitter:description" content="IdeaBox - Construction Template for Architect and Construction">
+        <meta name="twitter:image" content="images/banner-slider/bg1.jpg">
 
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=1.0.0" type="text/css">
@@ -341,15 +354,88 @@
                         <div class="col-md-12">
                             <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                                 <p class="text-center">Who we are</p>
-                                <h2>About Ou</h2>
+                                <h2 class="text-center">About Us</h2>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6">
+                            <div class="home-about-text">
+                                <h4>Welcome to <span class="color-text">IdeaBox</span></h4>
+                                <p class="text-justify">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                                <p class="text-justify">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                </p>
+                                <a href="javascript:;" class="btn-readmore btn skew-icon-btn m-r15">Read more <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <img src="images/about-us.jpg" class="img-fluid home-about"/>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- End About Us -->
+            <!-- Start Counter -->
+            <section class="parallax-counter-projects client-testimonials pad80" data-parallax="scroll" data-image-src="images/counter-projects.jpg">
+                <div class="container">
 
-
+                    <div id="projectFacts" class="sectionClass">
+                        <div class="fullWidth eight columns">
+                            <div class="projectFactsWrap ">
+                                <div class="col-md-3 col-sm-6 wow fadeIn animated animated" data-number="12" style="visibility: visible;">
+                                    <div class="item">
+                                        <i class="fa fa-briefcase"></i>
+                                        <p id="number1" class="number">12</p>
+                                        <p>Projects done</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 wow fadeIn animated animated" data-number="55" style="visibility: visible;">
+                                    <div class="item">
+                                        <i class="fa fa-smile-o"></i>
+                                        <p id="number2" class="number">55</p>
+                                        <p>Happy clients</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 wow fadeIn animated animated" data-number="359" style="visibility: visible;">
+                                    <div class="item">
+                                        <i class="fa fa-coffee"></i>
+                                        <p id="number3" class="number">359</p>
+                                        <p>Cups of coffee</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 wow fadeIn animated animated" data-number="246" style="visibility: visible;">
+                                    <div class="item">
+                                        <i class="fa fa-camera"></i>
+                                        <p id="number4" class="number">246</p>
+                                        <p>Repairing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Counter -->
+            <!-- Start Services -->
+            <section class="about-us white-bg pad80 alt-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <p class="text-center">Discover what we offer</p>
+                                <h2 class="text-center">Our Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services -->
             <!-- Start Happy Customers -->
             <section class="parallax-window client-testimonials pad80" data-parallax="scroll" data-image-src="images/testimonials_bg.jpg">
                 <div class="container">
@@ -572,6 +658,7 @@
         jQuery(document).ready(function(e) {
             // jQuery('.body-wrapper').parallax({imageSrc: 'images/testimonials_bg.jpg'});
             $('.parallax-window').parallax({imageSrc: 'images/testimonials_bg.jpg'});
+            $('.parallax-counter-projects').parallax({imageSrc: 'images/counter-projects.jpg'});
         });
 
 
