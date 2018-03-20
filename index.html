@@ -10,7 +10,6 @@
         <meta name='abstract' content='IdeaBox - Construction Template for Architect and Construction' />
         <meta name='author' content='Jashpal Rohit - IdeaBox' />
         <meta name="robots" content="index,follow" />
-
         <!--FB Meta -->
         <meta property="og:title" content="IdeaBox" />
         <meta property="og:description" content="IdeaBox - Construction Template for Architect and Construction"/>
@@ -23,7 +22,6 @@
         <meta name="twitter:title" content="IdeaBox">
         <meta name="twitter:description" content="IdeaBox - Construction Template for Architect and Construction">
         <meta name="twitter:image" content="images/banner-slider/bg1.jpg">
-
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=1.0.0" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css?v=1.0.0" type="text/css">
@@ -34,10 +32,12 @@
         <link rel="stylesheet" href="css/owl.theme.min.css">
         <link rel="stylesheet" href="css/style.css?v=1.0.0" type="text/css">
         <link rel="stylesheet" href="css/responsive.css?v=1.0.0" type="text/css">
-
         <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     </head>
     <body>
+        <div class="preloader" id="spinner">
+      <div class="preload"></div>
+    </div>
         <div class="body-wrapper">
             <!-- Start Header -->
             <header class="mobile-menu">
@@ -78,22 +78,27 @@
                                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="about-us.html">About Us</a></li>
                                             <li><a href="#">Services</a></li>
                                             <li><a href="#">Career</a></li>
-                                            <li><a href="#">Gallery</a></li>
-                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">News & Events</a></li>
                                             <li><a href="#">Our Team</a></li>
                                             <li><a href="#">FAQ</a></li>
                                             <li><a href="#">Error</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Product 1</a></li>
-                                            <li><a href="#">Product 2</a></li>
-                                            <li><a href="#">Product Details 1</a></li>
-                                            <li><a href="#">Product Details 2</a></li>
+                                            <li><a href="#">Project 1</a></li>
+                                            <li><a href="#">Project 2</a></li>
+                                            <li><a href="#">Project Details 1</a></li>
+                                            <li><a href="#">Project Details 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Gallery 1</a></li>
+                                            <li><a href="#">Gallery 2</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
@@ -311,7 +316,7 @@
                 <!-- End Slider -->
 
                 <!-- Start Main Three Services -->
-                <section class="home-three-services white-bg">
+                <section class="home-three-services white-bg-color">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 col-sm-4 no-padding">
@@ -358,7 +363,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-40">
                             <div class="col-md-7 col-sm-6">
                                 <div class="home-about-text">
                                     <h4>Welcome to <span class="color-text">IdeaBox</span></h4>
@@ -384,7 +389,6 @@
                 <!-- Start Counter -->
                 <section class="parallax-counter-projects client-testimonials pad80" data-parallax="scroll" data-image-src="images/counter-projects.jpg">
                     <div class="container">
-
                         <div id="projectFacts" class="sectionClass">
                             <div class="fullWidth eight columns">
                                 <div class="projectFactsWrap ">
@@ -422,20 +426,105 @@
                     </div>
                 </section>
                 <!-- End Counter -->
-                <!-- Start Services -->
-                <section class="about-us white-bg pad80 white-bg">
+                <!-- Start Our Projects  -->
+                <section class="our-project pad80 alt-color">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                                    <p class="text-center">Discover what we offer</p>
-                                    <h2 class="text-center">Our Services</h2>
+                                    <p class="text-center">Reason for Choosing Us</p>
+                                    <h2 class="text-center">Why Choose Us</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-40">
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-life-ring"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">BEST QUALITY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-trophy"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">INTEGRITY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-thumbs-up"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">STRATEGY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-users"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">SAFETY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-area-chart"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">COMMUNITY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                                <div class="why-choode-wrap-box text-center">
+                                    <div class="why-choose-icon">
+                                        <a href="#" class="why-choose-icon-link"><i class="fa fa-cogs"></i></a>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h5 class="text-uppercase">SUSTAINABILITY</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <!-- End Services -->
+                <!-- End Our Projects -->
+                <!-- Start Our Team  -->
+                <section class="our-team pad80 white-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                    <p class="text-center">Meet our Enthusiastic Team</p>
+                                    <h2 class="text-center">Our Team</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt20">
+
+                        </div>
+                    </div>
+                </section>
+                <!-- End Our Team -->
                 <!-- Start Happy Customers -->
                 <section class="parallax-window client-testimonials pad80" data-parallax="scroll" data-image-src="images/testimonials_bg.jpg">
                     <div class="container">
@@ -447,7 +536,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-40">
                             <div class="col-md-12">
                                 <div id="testimonial-slider" class="owl-carousel">
                                     <div class="testimonial">
@@ -489,22 +578,26 @@
                     </div>
                 </section>
                 <!-- End Happy Customers -->
-                <!-- Start Our Products  -->
-                <section class="white-bg pad80 alt-color">
+                <!-- Start Our Projects  -->
+                <section class="our-projects pad80 alt-color">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                                    <p class="text-center">Latest News about Company Products</p>
-                                    <h2 class="text-center">Our Products</h2>
+                                    <p class="text-center">Our Latest Recent Projects</p>
+                                    <h2 class="text-center">Our Projects</h2>
                                 </div>
                             </div>
                         </div>
+                        <div class="row mt-40">
+
+                        </div>
                     </div>
                 </section>
-                <!-- End Our Products -->
+                <!-- End Our Projects -->
+
                 <!-- Start FAQs -->
-                <section class="white-bg pad80 white-bg">
+                <section class="faqs pad80 white-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -514,11 +607,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mar-top-30">
-                            <div class="col col-sm-4 animate" data-animate="fadeInUp">
+                        <div class="row mt-40">
+                            <div class="col col-sm-4 hidden-xs animate" data-animate="fadeInUp">
                                 <figure><img class="img-responsive" src="images/faq-img.png" alt=""/></figure>
                             </div>
-                            <div class="col col-sm-8">
+                            <div class="col col-sm-8 col-xs-12">
                                 <div id="accordion">
                                     <div class="card accordion-custom">
                                         <div class="card-header card-title" id="headingOne">
@@ -586,16 +679,110 @@
                 </section>
                 <!-- End FAQs -->
                 <!-- Start News & Events  -->
-                <section class="white-bg pad80 alt-color">
+                <section class="news-events pad80 alt-color">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                                    <p class="text-center">Latest News about Company Products</p>
+                                    <p class="text-center">Latest News about Company</p>
                                     <h2 class="text-center">News & Events</h2>
                                 </div>
                             </div>
                         </div>
+                        <div class="row mt20">
+                           <div class="home-news-slide">
+                               <div class="col-sm-12">
+                                   <div class="single-news">
+                                       <div class="image">
+                                           <img src="images/news-and-events/project_1.jpg" alt="">
+                                           <div class="date">
+                                               <p><i class="fa fa-calendar"></i> <span>03</span> Jan </p>
+                                           </div>
+                                       </div>
+                                       <div class="news-content">
+                                           <strong><span> <i class="fa fa-user"></i>  By Admin </span><span> <i class="fa fa-file"></i> Business</span></strong>
+                                           <h3><a href="#">Why Do Citizens Have Creative?</a></h3>
+                                           <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy.</p>
+                                           <div class="read-more">
+                                               <a href="#">Read More..</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-12">
+                                   <div class="single-news">
+                                       <div class="image">
+                                           <img src="images/news-and-events/project_2.jpg" alt="">
+                                           <div class="date">
+                                               <p><i class="fa fa-calendar"></i> <span>07</span> Mar </p>
+                                           </div>
+                                       </div>
+                                       <div class="news-content">
+                                           <strong><span> <i class="fa fa-user"></i>  By Admin </span><span> <i class="fa fa-file"></i> Technology</span></strong>
+                                           <h3><a href="#">Why Do Citizens Have Creative?</a></h3>
+                                           <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy.</p>
+                                           <div class="read-more">
+                                               <a href="#">Read More..</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-12">
+                                   <div class="single-news">
+                                       <div class="image">
+                                           <img src="images/news-and-events/project_3.jpg" alt="">
+                                           <div class="date">
+                                               <p><i class="fa fa-calendar"></i>  <span>09</span> Jan </p>
+                                           </div>
+                                       </div>
+                                       <div class="news-content">
+                                           <strong><span> <i class="fa fa-user"></i>  By Admin </span><span> <i class="fa fa-file"></i> Corporate</span></strong>
+                                           <h3><a href="#">Why Do Citizens Have Creative?</a></h3>
+                                           <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy.</p>
+                                           <div class="read-more">
+                                               <a href="#">Read More..</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-12">
+                                   <div class="single-news">
+                                       <div class="image">
+                                           <img src="images/news-and-events/project_4.jpg" alt="">
+                                           <div class="date">
+                                               <p><i class="fa fa-calendar"></i>  <span>09</span> Jan </p>
+                                           </div>
+                                       </div>
+                                       <div class="news-content">
+                                           <strong><span> <i class="fa fa-user"></i>  By Admin </span><span> <i class="fa fa-file"></i> Technology</span></strong>
+                                           <h3><a href="#">Why Do Citizens Have Creative?</a></h3>
+                                           <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy.</p>
+                                           <div class="read-more">
+                                               <a href="#">Read More..</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-sm-12">
+                                   <div class="single-news">
+                                       <div class="image">
+                                           <img src="images/news-and-events/project_6.jpg" alt="">
+                                           <div class="date">
+                                               <p><i class="fa fa-calendar"></i>  <span>09</span> Jan </p>
+                                           </div>
+                                       </div>
+                                       <div class="news-content">
+                                           <strong><span> <i class="fa fa-user"></i>  By Admin </span><span> <i class="fa fa-file"></i> Technology</span></strong>
+                                           <h3><a href="#">Why Do Citizens Have Creative?</a></h3>
+                                           <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy.</p>
+                                           <div class="read-more">
+                                               <a href="#">Read More..</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
                     </div>
                 </section>
                 <!-- End News & Events -->
@@ -610,7 +797,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-40">
                             <div class="col-md-12">
                                 <div class="customer-logos">
                                   <div class="slide"><img src="images/clients/image1.png"></div>
@@ -697,7 +884,7 @@
                                         <i class="fa fa-map-marker footer-icon"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h5 class="wt-tilte">Address</h5>
+                                        <h5 class="footer-address-tilte">Address</h5>
                                         <p>No.123 Chalingt Gates, Supper market New York</p>
                                     </div>
                                 </div>
@@ -708,7 +895,7 @@
                                         <i class="fa fa-phone footer-icon"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h5 class="wt-tilte">Phone</h5>
+                                        <h5 class="footer-address-tilte">Phone</h5>
                                         <p class="m-b0">+41 555 888 9585</p>
                                         <p>+41 555 888 9585</p>
                                     </div>
@@ -720,7 +907,7 @@
                                         <i class="fa fa-envelope footer-icon"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h5 class="wt-tilte">Email</h5>
+                                        <h5 class="footer-address-tilte">Email</h5>
                                         <p class="m-b0">info@demo.com</p>
                                         <p>info@demo1234.com</p>
                                     </div>
@@ -743,6 +930,11 @@
             </footer>
             <!-- End Footer -->
         </div>
+        <!-- Start Back to Top -->
+        <a id="toTopBtn">
+            <span class="backtoptop" alt="Back to Top" title="Back to Top" >Back To Top</span>
+        </a>
+        <!-- End Back to Top -->
         <!-- Start Script -->
         <script type="text/javascript" src="js/jquery-3.3.1.min.js?v=1.0.0"></script>
         <script type="text/javascript" src="js/bootstrap.min.js?v=1.0.0"></script>

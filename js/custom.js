@@ -1,7 +1,12 @@
+// 0. Start Loader
+jQuery(document).ready(function() {
+    jQuery("#spinner").fadeOut("slow");
+});
+// 0. End Loader
 // 1. Start Fix Header
-$(window).scroll(function() {
-    var sticky = $('.mobile-menu'),
-        scroll = $(window).scrollTop();
+jQuery(window).scroll(function() {
+    var sticky = jQuery('.mobile-menu'),
+        scroll = jQuery(window).scrollTop();
 
     if (scroll >= 40) {
         sticky.addClass('fixed');
@@ -19,8 +24,8 @@ $('ul.navbar-nav li.dropdown').hover(function() {
 });
 // 2. End Hover Dropdown Menu Open
 // 3. Start Client Carousel
-$(document).ready(function() {
-    $('.customer-logos').slick({
+jQuery(document).ready(function() {
+    jQuery('.customer-logos').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -45,47 +50,90 @@ $(document).ready(function() {
 });
 // 3. End Client Carousel
 // 4. Start Cleint Testimonials
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:2,
-        loop:true,
-        autoPlay:true,
+jQuery(document).ready(function() {
+    jQuery("#testimonial-slider").owlCarousel({
+        items: 2,
+        loop: true,
+        autoPlay: true,
         autoplaySpeed: 1500,
-        itemsDesktop:[1000,2],
-        itemsDesktopSmall:[979,2],
-        itemsTablet:[768,1],
-        pagination:true,
-        autoPlay:false
+        itemsDesktop: [
+            1000, 2
+        ],
+        itemsDesktopSmall: [
+            979, 2
+        ],
+        itemsTablet: [
+            768, 1
+        ],
+        pagination: true,
+        autoPlay: false
     });
 });
 // 4. End Cleint Testimonials
 // 5. Start Counter
-
-	$.fn.jQuerySimpleCounter = function( options ) {
-	    var settings = $.extend({
-	        start:  0,
-	        end:    100,
-	        easing: 'swing',
-	        duration: 400,
-	        complete: ''
-	    }, options );
-
-	    var thisElement = $(this);
-
-	    $({count: settings.start}).animate({count: settings.end}, {
-			duration: settings.duration,
-			easing: settings.easing,
-			step: function() {
-				var mathCount = Math.ceil(this.count);
-				thisElement.text(mathCount);
-			},
-			complete: settings.complete
-		});
-	};
-
-
-$('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
-$('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
-$('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
-$('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
+jQuery.fn.jQuerySimpleCounter = function(options) {
+    var settings = jQuery.extend({
+        start: 0,
+        end: 100,
+        easing: 'swing',
+        duration: 400,
+        complete: ''
+    }, options);
+    var thisElement = jQuery(this);
+    jQuery({count: settings.start}).animate({
+        count: settings.end
+    }, {
+        duration: settings.duration,
+        easing: settings.easing,
+        step: function() {
+            var mathCount = Math.ceil(this.count);
+            thisElement.text(mathCount);
+        },
+        complete: settings.complete
+    });
+};
+jQuery('#number1').jQuerySimpleCounter({end: 12, duration: 3000});
+jQuery('#number2').jQuerySimpleCounter({end: 55, duration: 3000});
+jQuery('#number3').jQuerySimpleCounter({end: 359, duration: 2000});
+jQuery('#number4').jQuerySimpleCounter({end: 246, duration: 2500});
 // 5. End Counter
+// 6. Start Back to Top
+jQuery(document).ready(function() {
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 20) {
+            jQuery('#toTopBtn').fadeIn();
+        } else {
+            jQuery('#toTopBtn').fadeOut();
+        }
+    });
+
+    jQuery('#toTopBtn').click(function() {
+        jQuery("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
+});
+// 6. End BAck to Top
+// 7. Start Home Blog slides
+$(".home-news-slide").owlCarousel({
+    autoPlay: true,
+    slideSpeed: 1500,
+    pagination: false,
+    navigation: true,
+    items: 3,
+    navigationText: [
+        "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"
+    ],
+    itemsDesktop: [
+        1199, 3
+    ],
+    itemsDesktopSmall: [
+        980, 2
+    ],
+    itemsTablet: [
+        768, 2
+    ],
+    itemsMobile: [479, 1]
+});
+// 7. End Home Blog slides

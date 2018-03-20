@@ -15,7 +15,8 @@
         display: none;
     }
     .ideabox-navbar-custom .navbar-brand img.logo {
-        width: 70%;
+        width: 90%;
+        padding: 5px 0;
     }
     ul.social-icons.social-square.social-darkest{
         display: inline-flex;
@@ -66,9 +67,31 @@
         padding: 10px 5px;
     }
     .ideabox-navbar-custom.navbar-dark .navbar-nav li.nav-item.dropdown ul.dropdown-menu li {
-        padding: 10px
+        padding: 10px;
+        border: 1px solid #032238;
     }
     section.home-three-services {
-        margin: 0px 0 50px;
+        margin: -30px 0 0;
+    }
+    .inner-page-name .inner-page-box {
+        max-width: 280px;
+        padding: 25px;
+    }
+    .inner-page-name .inner-page-box-details {
+        padding: 50px 15px;
+    }
+    .inner-page-name .title{
+        font-size: 35px
+    }
+}
+@media screen and (max-width:767px){
+    .hidden-xs{
+        display: none;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+        left:0;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        right: 0;
     }
 }
