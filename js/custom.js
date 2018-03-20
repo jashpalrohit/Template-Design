@@ -33,19 +33,17 @@ jQuery(document).ready(function() {
         arrows: false,
         dots: false,
         pauseOnHover: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 2
-                }
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
             }
-        ]
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
     });
 });
 // 3. End Client Carousel
@@ -80,7 +78,9 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: ''
     }, options);
     var thisElement = jQuery(this);
-    jQuery({count: settings.start}).animate({
+    jQuery({
+        count: settings.start
+    }).animate({
         count: settings.end
     }, {
         duration: settings.duration,
@@ -92,10 +92,22 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: settings.complete
     });
 };
-jQuery('#number1').jQuerySimpleCounter({end: 12, duration: 3000});
-jQuery('#number2').jQuerySimpleCounter({end: 55, duration: 3000});
-jQuery('#number3').jQuerySimpleCounter({end: 359, duration: 2000});
-jQuery('#number4').jQuerySimpleCounter({end: 246, duration: 2500});
+jQuery('#number1').jQuerySimpleCounter({
+    end: 12,
+    duration: 3000
+});
+jQuery('#number2').jQuerySimpleCounter({
+    end: 55,
+    duration: 3000
+});
+jQuery('#number3').jQuerySimpleCounter({
+    end: 359,
+    duration: 2000
+});
+jQuery('#number4').jQuerySimpleCounter({
+    end: 246,
+    duration: 2500
+});
 // 5. End Counter
 // 6. Start Back to Top
 jQuery(document).ready(function() {
@@ -117,9 +129,10 @@ jQuery(document).ready(function() {
 // 6. End BAck to Top
 // 7. Start Home Blog slides
 $(".home-news-slide").owlCarousel({
-    autoPlay: true,
+    autoPlay: false,
     slideSpeed: 1500,
     pagination: false,
+    loop: true,
     navigation: true,
     items: 3,
     navigationText: [
@@ -137,3 +150,52 @@ $(".home-news-slide").owlCarousel({
     itemsMobile: [479, 1]
 });
 // 7. End Home Blog slides
+// 8. Start Home Team Slider
+jQuery('#owl-our-team').owlCarousel({
+    autoPlay: false,
+    slideSpeed: 1500,
+    pagination: false,
+    navigation: true,
+    items: 3,
+    loop: true,
+    navigationText: [
+        "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"
+    ],
+    itemsDesktop: [
+        1199, 3
+    ],
+    itemsDesktopSmall: [
+        980, 2
+    ],
+    itemsTablet: [
+        768, 2
+    ],
+    itemsMobile: [479, 1]
+});
+// 8. End Home Team Slider
+// 9. Start Project Masonry
+(function($) {
+    var $blocks = $('.sp-portfolio-block');
+    if ($blocks.length <= 0) {
+        return;
+    }
+    $blocks.each(function() {
+        var $this = $(this),
+            $grid = $this.find('.home-projects-items'),
+            $filterBtns = $this.find('.home-projects-sort a[data-group]');
+        $grid.pzt_shuffle({
+            itemSelector: '[class*="col-"]',
+            gutterWidth: 0,
+            speed: 600,
+            easing: 'ease'
+        });
+        $filterBtns.on('click', function(e) {
+            var $this = $(this);
+            $this.parent().siblings().removeClass('active');
+            $this.parent().addClass('active');
+            $grid.shuffle('shuffle', $this.data('group'));
+            e.preventDefault();
+        });
+    });
+})(jQuery);
+// 9. End Project Masonry
