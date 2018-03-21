@@ -175,14 +175,14 @@ jQuery('#owl-our-team').owlCarousel({
 // 8. End Home Team Slider
 // 9. Start Project Masonry
 (function($) {
-    var $blocks = $('.sp-portfolio-block');
+    var $blocks = $('.our-projects-block');
     if ($blocks.length <= 0) {
         return;
     }
     $blocks.each(function() {
         var $this = $(this),
-            $grid = $this.find('.home-projects-items'),
-            $filterBtns = $this.find('.home-projects-sort a[data-group]');
+            $grid = $this.find('.our-projects-items'),
+            $filterBtns = $this.find('.our-projects-sort a[data-group]');
         $grid.pzt_shuffle({
             itemSelector: '[class*="col-"]',
             gutterWidth: 0,
