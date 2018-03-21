@@ -11,6 +11,10 @@
     .header-top{
         display: none;
     }
+    div#navbarResponsive{
+        max-height: 350px;
+        overflow-y: auto;
+    }
     .border-gradiant{
         display: none;
     }
@@ -94,4 +98,24 @@
     .owl-theme .owl-controls .owl-buttons .owl-next {
         right: 0;
     }
+    .split-box .image-container {
+    position: relative;
+}
+.split-box .container-fluid{
+        padding: 0
+}
+.split-box{
+    margin: 15px 0
+}
+.split-box .ml-10 {
+    margin-left: 0px !important;
+}
+.split-box .content{
+    margin: 0
+}
+    .split-box .background-holder {
+    position: static;
+    min-height: 300px;
+    width: auto;
+}
 }
