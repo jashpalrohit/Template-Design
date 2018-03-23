@@ -1,3 +1,5 @@
+new WOW().init();
+
 // 0. Start Loader
 jQuery(document).ready(function() {
     jQuery("#spinner").fadeOut("slow");
@@ -33,17 +35,19 @@ jQuery(document).ready(function() {
         arrows: false,
         dots: false,
         pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
             }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 2
-            }
-        }]
+        ]
     });
 });
 // 3. End Client Carousel
@@ -78,9 +82,7 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: ''
     }, options);
     var thisElement = jQuery(this);
-    jQuery({
-        count: settings.start
-    }).animate({
+    jQuery({count: settings.start}).animate({
         count: settings.end
     }, {
         duration: settings.duration,
@@ -92,22 +94,10 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: settings.complete
     });
 };
-jQuery('#number1').jQuerySimpleCounter({
-    end: 12,
-    duration: 3000
-});
-jQuery('#number2').jQuerySimpleCounter({
-    end: 55,
-    duration: 3000
-});
-jQuery('#number3').jQuerySimpleCounter({
-    end: 359,
-    duration: 2000
-});
-jQuery('#number4').jQuerySimpleCounter({
-    end: 246,
-    duration: 2500
-});
+jQuery('#number1').jQuerySimpleCounter({end: 12, duration: 3000});
+jQuery('#number2').jQuerySimpleCounter({end: 55, duration: 3000});
+jQuery('#number3').jQuerySimpleCounter({end: 359, duration: 2000});
+jQuery('#number4').jQuerySimpleCounter({end: 246, duration: 2500});
 // 5. End Counter
 // 6. Start Back to Top
 jQuery(document).ready(function() {
@@ -183,12 +173,7 @@ jQuery('#owl-our-team').owlCarousel({
         var $this = $(this),
             $grid = $this.find('.our-projects-items'),
             $filterBtns = $this.find('.our-projects-sort a[data-group]');
-        $grid.pzt_shuffle({
-            itemSelector: '[class*="col-"]',
-            gutterWidth: 0,
-            speed: 600,
-            easing: 'ease'
-        });
+        $grid.pzt_shuffle({itemSelector: '[class*="col-"]', gutterWidth: 0, speed: 600, easing: 'ease'});
         $filterBtns.on('click', function(e) {
             var $this = $(this);
             $this.parent().siblings().removeClass('active');
@@ -199,3 +184,43 @@ jQuery('#owl-our-team').owlCarousel({
     });
 })(jQuery);
 // 9. End Project Masonry
+// 10. Start Google Map
+google.maps.event.addDomListener(window, 'load', init);
+function init() {
+    var myLatlng = new google.maps.LatLng(-6.373091, 106.835175);
+    var mapOptions = {
+        zoom: 15,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        center: myLatlng,
+        styles: [
+            {
+                "stylers": [
+                    {
+                        "hue": "#ff1a00"
+                    }, {
+                        "invert_lightness": true
+                    }, {
+                        "saturation": -100
+                    }, {
+                        "lightness": 33
+                    }, {
+                        "gamma": 0.5
+                    }
+                ]
+            }, {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#2D333C"
+                    }
+                ]
+            }
+        ]
+    };
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var marker = new google.maps.Marker({position: myLatlng, map: map, icon: 'images/map_marker.png', title: 'Lorem Ipsum'});
+}
+// 10. End Google Map
