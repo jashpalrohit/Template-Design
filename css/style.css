@@ -1765,6 +1765,7 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
 .mt20 {
     margin-top: 20px
 }
+
 .ct-in {
     background: #ebf6ff none repeat scroll 0 0;
     -webkit-border-radius: 30px;
@@ -1794,6 +1795,7 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     padding-right: 35px;
     text-transform: uppercase;
 }
+
 /*----- 14. Vision, Mission, Values ----*/
 
 .split-box {
@@ -2078,29 +2080,12 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     margin-left: 15px;
     min-height: 130px;
 }
-.contact-info-details-1 {
-    padding: 15px;
-    border: 1px solid #ddd;
-    background: #fff;
-    color: #272727;
-    transition: 0.7s;
-    width: 100%;
-    margin-left: 15px;
-    min-height: 225px;
-}
+
 .contact-info-details:hover {
     background: #272727;
     border-color: #272727;
     width: 100%;
     margin-left: 0;
-}
-.contact-info-details-1:hover {
-    background: #272727;
-        border-color: #272727;
-        width: 100%;
-        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
-        transform: scale(1.2);
-        position: relative;z-index: 2
 }
 
 .contact-box {
@@ -2111,14 +2096,7 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background: #ffffff;
     border: 1px solid #ddd;
 }
-.contact-box-1 {
-    position: relative;
-    box-shadow: -6px 5px 20px -4px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    padding: 80px;
-    background: #ffffff;
-    border: 30px solid rgba(221, 221, 221, 0.7);
-}
+
 .box-list {
     margin-top: 45px;
 }
@@ -2145,47 +2123,96 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     line-height: 70px;
     margin-right: 25px;
 }
-.contact-info-details-1 .single-item-1 .icon-box {
-    font-size: 50px;
-        color: #febb1d;
-        width: 70px;
-        text-align: center;
-        height: 70px;
-        line-height: 70px;
-        margin: 0 auto;
-}
 
-.contact-info-details .single-item .title, .contact-info-details-1 .single-item-1 .title {
+.contact-info-details .single-item .title {
     font-size: 25px;
     margin: 10px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #272727
 }
-.contact-info-details-1 .single-item-1 .title {
-    color: #febb1e
-}
-.second-contact-details{
-    transform: scale(1.15);
-position: relative;
-z-index: 1;
-}
+
 .contact-info-details .single-item .text p {
     color: #272727;
     margin: 0;
     font-size: 16px;
     letter-spacing: 0.5px;
 }
-.contact-info-details-1 .single-item-1 .text p{
-    color: #272727;
-    font-size: 15px;
-}
+
 .contact-info-details .single-item .text p a {
     color: #272727;
 }
-.contact-info-details-1:hover .single-item-1 .text p a, .contact-info-details-1:hover .single-item-1 .text p{
-    color: #fff
+.contact-top-box{
+border: 1px solid #eee;
+padding: 50px;
+box-shadow: 0px 0px 38px -5px #ddd;
 }
+.contact-top-box .contact-top-form{
+
+}
+.contact-info-bottom {
+    padding: 20px;
+    border: 1px solid #eee;
+    min-height: 230px;
+    display: block;
+    background: #fff;
+    transition: 0.5s;
+}
+.contact-info-bottom.sec-address{
+    transform: scale(1.06);
+    position: relative;
+    z-index: 2
+}
+.contact-info-bottom:hover {
+    background: #272727;
+    border-color: #272727;
+    transform: scale(1.12);
+    position: relative;
+    z-index: 22;
+}
+
+.contact-info-bottom .single-item {
+    vertical-align: middle;
+}
+
+.contact-info-bottom .single-item .icon-box {
+    font-size: 65px;
+    margin-bottom: 20px;
+    color: #febb1e;
+    opacity: 0.8;
+}
+
+.contact-info-bottom .single-item .title {
+    font-size: 23px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #272727;
+    font-weight: bold;
+}
+
+.contact-info-bottom .single-item .text p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #272727;
+}
+
+.contact-info-bottom .single-item .text p a {
+    color: #272727;
+}
+
+.contact-info-bottom:hover .icon-box {
+    opacity: 1;
+}
+
+.contact-info-bottom:hover .single-item .title {
+    color: #febb1e;
+}
+
+.contact-info-bottom:hover .single-item .text p, .contact-info-bottom:hover .single-item .text p a {
+    color: #fff;
+}
+
 /*----- B. Google Map -----*/
 
 #map, .page_map {
