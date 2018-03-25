@@ -184,7 +184,81 @@ jQuery('#owl-our-team').owlCarousel({
     });
 })(jQuery);
 // 9. End Project Masonry
-// 10. Start Google Map
+
+// 10. Start Pricing Selection
+jQuery(document).ready(function($) {
+    checkScrolling($('.pricing-body'));
+    $(window).on('resize', function() {
+        window.requestAnimationFrame(function() {
+            checkScrolling($('.pricing-body'))
+        });
+    });
+    $('.pricing-body').on('scroll', function() {
+        var selected = $(this);
+        window.requestAnimationFrame(function() {
+            checkScrolling(selected)
+        });
+    });
+    function checkScrolling(tables) {
+        tables.each(function() {
+            var table = $(this),
+                totalTableWidth = parseInt(table.children('.pricing-features').width()),
+                tableViewport = parseInt(table.width());
+            if (table.scrollLeft() >= totalTableWidth - tableViewport - 1) {
+                table.parent('li').addClass('is-ended');
+            } else {
+                table.parent('li').removeClass('is-ended');
+            }
+        });
+    }
+    bouncy_filter($('.pricing-container'));
+    function bouncy_filter(container) {
+        container.each(function() {
+            var pricing_table = $(this);
+            var filter_list_container = pricing_table.children('.pricing-switcher'),
+                filter_radios = filter_list_container.find('input[type="radio"]'),
+                pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
+            var table_elements = {};
+            filter_radios.each(function() {
+                var filter_type = $(this).val();
+                table_elements[filter_type] = pricing_table_wrapper.find('li[data-type="' + filter_type + '"]');
+            });
+            filter_radios.on('change', function(event) {
+                event.preventDefault();
+                var selected_filter = $(event.target).val();
+                show_selected_items(table_elements[selected_filter]);
+                if (!Modernizr.cssanimations) {
+                    hide_not_selected_items(table_elements, selected_filter);
+                    pricing_table_wrapper.removeClass('is-switched');
+                } else {
+                    pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+                        hide_not_selected_items(table_elements, selected_filter);
+                        pricing_table_wrapper.removeClass('is-switched');
+                        //change rotation direction if .pricing-list has the .bounce-invert class
+                        if (pricing_table.find('.pricing-list').hasClass('bounce-invert'))
+                            pricing_table_wrapper.toggleClass('reverse-animation');
+                        }
+                    );
+                }
+            });
+        });
+    }
+    function show_selected_items(selected_elements) {
+        selected_elements.addClass('is-selected');
+    }
+    function hide_not_selected_items(table_containers, filter) {
+        $.each(table_containers, function(key, value) {
+            if (key != filter) {
+                $(this).removeClass('is-visible is-selected').addClass('is-hidden');
+
+            } else {
+                $(this).addClass('is-visible').removeClass('is-hidden is-selected');
+            }
+        });
+    }
+});
+// 10. End Pricing Selection
+// 11. Start Google Map
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var myLatlng = new google.maps.LatLng(-6.373091, 106.835175);
@@ -223,4 +297,4 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
     var marker = new google.maps.Marker({position: myLatlng, map: map, icon: 'images/map_marker.png', title: 'Lorem Ipsum'});
 }
-// 10. End Google Map
+// 11. End Google Map
