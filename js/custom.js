@@ -35,19 +35,17 @@ jQuery(document).ready(function() {
         arrows: false,
         dots: false,
         pauseOnHover: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 2
-                }
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
             }
-        ]
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
     });
 });
 // 3. End Client Carousel
@@ -82,7 +80,9 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: ''
     }, options);
     var thisElement = jQuery(this);
-    jQuery({count: settings.start}).animate({
+    jQuery({
+        count: settings.start
+    }).animate({
         count: settings.end
     }, {
         duration: settings.duration,
@@ -94,10 +94,22 @@ jQuery.fn.jQuerySimpleCounter = function(options) {
         complete: settings.complete
     });
 };
-jQuery('#number1').jQuerySimpleCounter({end: 12, duration: 3000});
-jQuery('#number2').jQuerySimpleCounter({end: 55, duration: 3000});
-jQuery('#number3').jQuerySimpleCounter({end: 359, duration: 2000});
-jQuery('#number4').jQuerySimpleCounter({end: 246, duration: 2500});
+jQuery('#number1').jQuerySimpleCounter({
+    end: 12,
+    duration: 3000
+});
+jQuery('#number2').jQuerySimpleCounter({
+    end: 55,
+    duration: 3000
+});
+jQuery('#number3').jQuerySimpleCounter({
+    end: 359,
+    duration: 2000
+});
+jQuery('#number4').jQuerySimpleCounter({
+    end: 246,
+    duration: 2500
+});
 // 5. End Counter
 // 6. Start Back to Top
 jQuery(document).ready(function() {
@@ -173,7 +185,12 @@ jQuery('#owl-our-team').owlCarousel({
         var $this = $(this),
             $grid = $this.find('.our-projects-items'),
             $filterBtns = $this.find('.our-projects-sort a[data-group]');
-        $grid.pzt_shuffle({itemSelector: '[class*="col-"]', gutterWidth: 0, speed: 600, easing: 'ease'});
+        $grid.pzt_shuffle({
+            itemSelector: '[class*="col-"]',
+            gutterWidth: 0,
+            speed: 600,
+            easing: 'ease'
+        });
         $filterBtns.on('click', function(e) {
             var $this = $(this);
             $this.parent().siblings().removeClass('active');
@@ -199,6 +216,7 @@ jQuery(document).ready(function($) {
             checkScrolling(selected)
         });
     });
+
     function checkScrolling(tables) {
         tables.each(function() {
             var table = $(this),
@@ -212,6 +230,7 @@ jQuery(document).ready(function($) {
         });
     }
     bouncy_filter($('.pricing-container'));
+
     function bouncy_filter(container) {
         container.each(function() {
             var pricing_table = $(this);
@@ -237,15 +256,16 @@ jQuery(document).ready(function($) {
                         //change rotation direction if .pricing-list has the .bounce-invert class
                         if (pricing_table.find('.pricing-list').hasClass('bounce-invert'))
                             pricing_table_wrapper.toggleClass('reverse-animation');
-                        }
-                    );
+                    });
                 }
             });
         });
     }
+
     function show_selected_items(selected_elements) {
         selected_elements.addClass('is-selected');
     }
+
     function hide_not_selected_items(table_containers, filter) {
         $.each(table_containers, function(key, value) {
             if (key != filter) {
@@ -258,8 +278,19 @@ jQuery(document).ready(function($) {
     }
 });
 // 10. End Pricing Selection
-// 11. Start Google Map
+// 11. Start Blog Share
+$(document).ready(function($) {
+    $('.card__share > a').on('click', function(e) {
+        e.preventDefault() // prevent default action - hash doesn't appear in url
+        $(this).parent().find('div').toggleClass('card__social--active');
+        $(this).toggleClass('share-expanded');
+    });
+
+});
+// 11. End Blog Share
+// 12. Start Google Map
 google.maps.event.addDomListener(window, 'load', init);
+
 function init() {
     var myLatlng = new google.maps.LatLng(-6.373091, 106.835175);
     var mapOptions = {
@@ -267,34 +298,33 @@ function init() {
         disableDefaultUI: true,
         scrollwheel: false,
         center: myLatlng,
-        styles: [
-            {
-                "stylers": [
-                    {
-                        "hue": "#ff1a00"
-                    }, {
-                        "invert_lightness": true
-                    }, {
-                        "saturation": -100
-                    }, {
-                        "lightness": 33
-                    }, {
-                        "gamma": 0.5
-                    }
-                ]
+        styles: [{
+            "stylers": [{
+                "hue": "#ff1a00"
             }, {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#2D333C"
-                    }
-                ]
-            }
-        ]
+                "invert_lightness": true
+            }, {
+                "saturation": -100
+            }, {
+                "lightness": 33
+            }, {
+                "gamma": 0.5
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#2D333C"
+            }]
+        }]
     };
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
-    var marker = new google.maps.Marker({position: myLatlng, map: map, icon: 'images/map_marker.png', title: 'Lorem Ipsum'});
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        icon: 'images/map_marker.png',
+        title: 'Lorem Ipsum'
+    });
 }
-// 11. End Google Map
+// 12. End Google Map
