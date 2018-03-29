@@ -20,7 +20,7 @@
         13. Inner Page Header
         14. Vision, Mission, Values
         15. History Timeline
-
+        G. Pagination
         F. Blog
         E. Pricing Table
         A. Contact Us Page
@@ -708,11 +708,6 @@ li {
 }
 
 /*----- 4. Client Carousel -----*/
-
-/*
-.customer-logos {
-    margin: 40px 0 0;
-}*/
 
 .slick-slide {
     margin: 0px 20px;
@@ -1691,6 +1686,11 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background-color: (0, 0, 0, 0.8);
 }
 
+.blog-banner {
+    background-image: url(../images/inner-banner/blog.jpg);
+    background-color: (0, 0, 0, 0.8);
+}
+
 .inner-page-name .inner-page-box {
     border: 2px solid #fff;
     margin: 0px auto;
@@ -2074,17 +2074,162 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     }
 }
 
+/*----- G. Pagination -----*/
+
+.clear:after, .pagination:after, .clear:before, .pagination:before {
+    content: "";
+    display: table;
+}
+
+.clear:after, .pagination:after {
+    clear: both;
+}
+
+.pagination__wrapper {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(17%, white), color-stop(83%, white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f7faff 17%, #f7faff 83%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    height: 50px;
+    left: 50%;
+    position: relative;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 700px;
+    margin-top: 70px
+}
+
+.pagination__wrapper:before, .pagination__wrapper:after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(17%, rgba(0, 0, 0, 0.1)), color-stop(83%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 17%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.pagination__wrapper:before {
+    top: -1px;
+}
+
+.pagination__wrapper:after {
+    bottom: -1px;
+}
+
+@-webkit-keyframes hoverAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hoverAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.pagination {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+.pagination li:first-child {
+    border: none;
+}
+
+.pagination button, .pagination span {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 40px;
+    padding: 0;
+}
+
+.pagination button {
+    outline: none;
+    position: relative;
+    -webkit-transition: all 170ms linear;
+    transition: all 170ms linear;
+}
+
+.pagination button:before {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    height: 0;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 170ms linear;
+    transition: all 170ms linear;
+    top: 50%;
+    width: 0;
+}
+
+.pagination button:hover:not(.active) {
+    color: black;
+}
+
+.pagination button:hover:not(.active):before {
+    -webkit-animation: hoverAnimation 510ms linear forwards;
+    animation: hoverAnimation 510ms linear forwards;
+    height: 40px;
+    width: 40px;
+}
+
+.pagination button.active {
+    background: rgba(254, 187, 30, 0.4);
+    color: black;
+}
+
+.pagination .prev, .pagination .next {
+    font-size: 14px;
+}
+
 /*----- F. Blog -----*/
 
 .side-searchbar, .side-search-category, .side-popular-tags, .side-recent-post {
     width: 100%;
 }
 
+.pricing_container {
+    position: relative;
+}
+
 .sidebar-category {
     outline: 2px solid #ddd;
     outline-offset: -10px;
-    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 3px 3px 15px -5px rgba(0, 0, 0, 0.3);
     padding: 30px 20px;
+    position: absolute;
+    right: 0
 }
 
 .blog-sidebar-title h2 {
@@ -2135,7 +2280,7 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     display: block;
 }
 
-.cat-list, .tag-list {
+.cat-list, .tag-list, .sidebar-post {
     margin-top: 20px;
 }
 
@@ -2161,10 +2306,12 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
 .cat-list li:last-child a {
     border-bottom: 1px solid #ddd;
 }
+
 .tag-list li {
     display: inline-block;
     margin: 3px;
 }
+
 .tag-list li a {
     background-color: #ffffff;
     display: inline-block;
@@ -2174,15 +2321,189 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     transition: 0.5s;
     border: 1px solid #ddd;
 }
-.tag-list li a:hover{
+
+.tag-list li a:hover {
     background: #272727;
     color: #fff
 }
-/*----- E. Pricing Table -----*/
 
-.pricing-container {
-    /* width: 100%; */
+.sidebar-post>li {
+    display: flex;
+    margin-bottom: 30px;
 }
+
+.sidebar-post>li:last-child {
+    margin-bottom: 0
+}
+
+.blog-thumb-widget {
+    margin-right: 20px;
+    width: 150px;
+}
+
+.blog-title h5 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.blog-title>span {
+    color: #747474;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.single-blog .blog-photo img {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.single-blog:hover .blog-photo img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+
+.blog-details {
+    background-color: #303030;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.1);
+    margin: -80px auto 50px;
+    padding: 25px;
+    position: relative;
+    width: 90%;
+    z-index: 99;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.blog-details h3.basic-title a {
+    font-size: 26px;
+    color: #eee;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.5s
+}
+
+.blog-details p {
+    color: #eee;
+    text-align: justify;
+}
+
+.blog-details a.read-more {
+    color: #eee;
+    transition: 0.5s
+}
+
+.single-blog:hover .blog-details a.read-more, .single-blog:hover .blog-details h3.basic-title a {
+    color: #febb1e;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0px 0 9px;
+}
+
+.list-inline>li>a {
+    color: #fff;
+    margin: 10px;
+}
+
+.card__share {
+    float: right;
+    position: relative;
+    margin-top: -42px;
+}
+
+.card__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    width: 160px;
+    transform: translateZ(0);
+    transform: translateX(0px);
+    transition: transform 0.35s ease;
+}
+
+.card__social--active {
+    visibility: visible;
+    /*z-index: 3;*/
+    transform: translateZ(0);
+    transform: translateX(-48px);
+    transition: transform 0.35s ease;
+}
+
+.share-toggle {
+    z-index: 2;
+}
+
+.share-toggle:before {
+    content: "\f1e0";
+    font-family: 'FontAwesome';
+    color: #febb1e;
+    font-size: 17px;
+}
+
+.share-toggle.share-expanded:before {
+    content: "\f00d";
+}
+
+.share-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #313131;
+    transition: all 0.3s ease;
+    outline: 0;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.23), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon:hover, .share-icon:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00abe3;
+}
+
+.googleplus {
+    background-color: #d3492c;
+}
+
+.facebook, .twitter, .googleplus {
+    color: #fff;
+}
+
+.facebook:hover, .twitter:hover, .googleplus:hover {
+    color: #eee;
+}
+
+
+
+/*----- E. Pricing Table -----*/
 
 .pricing-container.full-width {
     width: 100%;
