@@ -21,6 +21,7 @@
         14. Vision, Mission, Values
         15. History Timeline
 
+        F. Blog
         E. Pricing Table
         A. Contact Us Page
         B. Google Map
@@ -2073,6 +2074,110 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     }
 }
 
+/*----- F. Blog -----*/
+
+.side-searchbar, .side-search-category, .side-popular-tags, .side-recent-post {
+    width: 100%;
+}
+
+.sidebar-category {
+    outline: 2px solid #ddd;
+    outline-offset: -10px;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.36);
+    padding: 30px 20px;
+}
+
+.blog-sidebar-title h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.blog-sidebar-title:before {
+    content: '';
+    background: #febb1d;
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    top: 0;
+}
+
+.searchbox-blog {
+    margin: 20px 0
+}
+
+.searchbox-blog input {
+    background: transparent;
+    padding: 15px 40px 15px 15px;
+}
+
+.searchbox-blog button.search-box {
+    color: #FEBB1E;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    background: transparent;
+    padding: 11px;
+    opacity: 0.7;
+    font-weight: 100;
+    z-index: 9;
+}
+
+.side-search-category, .side-popular-tags, .side-recent-post {
+    margin-top: 30px;
+}
+
+.cat-list li {
+    display: block;
+}
+
+.cat-list, .tag-list {
+    margin-top: 20px;
+}
+
+.cat-list li a {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    padding: 10px 18px;
+    color: #444;
+    background: #fff;
+    font-size: 13px;
+    transition: 0.5s
+}
+
+.cat-list li a:hover {
+    background: #272727;
+    color: #fff
+}
+
+.cat-list li:last-child a {
+    border-bottom: 1px solid #ddd;
+}
+.tag-list li {
+    display: inline-block;
+    margin: 3px;
+}
+.tag-list li a {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 3px 15px;
+    font-size: 13px;
+    color: #272727;
+    transition: 0.5s;
+    border: 1px solid #ddd;
+}
+.tag-list li a:hover{
+    background: #272727;
+    color: #fff
+}
 /*----- E. Pricing Table -----*/
 
 .pricing-container {
@@ -2083,10 +2188,12 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     width: 100%;
     max-width: none;
 }
+
 .exclusive {
     z-index: 9;
     position: relative;
 }
+
 .pricing-switcher {
     text-align: center;
 }
@@ -2464,27 +2571,32 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
 .has-margins .pricing-footer {
     padding-bottom: 0;
 }
-.pricing-section-two.pricing-wrapper>li{
-    background:#F7FAFF;
+
+.pricing-section-two.pricing-wrapper>li {
+    background: #F7FAFF;
     transition: 0.5s;
 }
-.pricing-section-two.pricing-wrapper>li:hover{
+
+.pricing-section-two.pricing-wrapper>li:hover {
     background: #fff;
     transform: translateY(-10px);
 }
 
-.pricing-section-one.pricing-wrapper>li:hover{
+.pricing-section-one.pricing-wrapper>li:hover {
     background: #fff;
     transform: translateY(-10px);
 }
-.pricing-section-one.pricing-wrapper>li{
+
+.pricing-section-one.pricing-wrapper>li {
     background: #fff;
     transition: 0.5s
 }
-.pricing-section-one.pricing-wrapper>li:hover{
+
+.pricing-section-one.pricing-wrapper>li:hover {
     background: #F7FAFF;
     transition: 0.5s
 }
+
 .select {
     position: relative;
     z-index: 1;
@@ -2973,7 +3085,8 @@ footer.footer .newsletter-bx {
 footer.footer .newsletter-bx input {
     background: transparent;
     border: 1px solid #505050;
-    color: #777
+    color: #777;
+    padding: 15px 45px 15px 15px
 }
 
 footer.footer .newsletter-bx button.site-button {
