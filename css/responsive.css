@@ -1,4 +1,4 @@
-@media (min-width:992px) and (max-width:1280px){
+@media (min-width:992px) and (max-width:1280px) {
     .ideabox-navbar-custom.navbar-dark .navbar-nav .nav-link {
         padding: 25px 10px;
         font-size: 15px;
@@ -7,15 +7,29 @@
         background: linear-gradient(45deg, #fff 35%, #FEBB1E 35%);
     }
 }
+
 @media screen and (max-width:991px) {
     .ideabox-navbar-custom {
         border-bottom: none;
         background: #fff;
         padding: 0;
     }
+    .contact-top-box {
+        padding: 15px
+    }
     ul.social-network {
         float: none;
         text-align: center;
+    }
+    button.customfile-upload {
+        width: 20%;
+        padding: 13px 0;
+        background: #febb1e;
+        color: #272727;
+        text-transform: uppercase;
+        font-size: 9px;
+        height: 48px;
+        font-weight: 700;
     }
     .header-top {
         display: none;
@@ -100,16 +114,16 @@
         font-size: 25px;
         margin-bottom: 10px
     }
-    .value{
+    .value {
         font-size: 50px
     }
-    .currency, .duration{
+    .currency, .duration {
         font-size: 20px
     }
-    .pricing-features{
+    .pricing-features {
         padding: 15px 10px;
     }
-    .pricing-features li{
+    .pricing-features li {
         padding: 10px 0;
         font-size: 13px;
     }
