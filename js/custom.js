@@ -288,6 +288,9 @@ $(document).ready(function($) {
 
 });
 // 11. End Blog Share
+// 13. Start Circle ProgressBar
+
+// 13. End Circle ProgressBar
 // 12. Start Google Map
 google.maps.event.addDomListener(window, 'load', init);
 
