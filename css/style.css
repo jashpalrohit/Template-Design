@@ -22,6 +22,8 @@
         15. History Timeline
         16. Our Team
         17. Career
+        18. Elements
+        19. Social Share Icons
         G. Pagination
         F. Blog
         E. Pricing Table
@@ -749,6 +751,7 @@ li {
     vertical-align: middle;
     border: 1px solid;
     border-radius: 0;
+    padding: 10px 30px;
     overflow: hidden;
 }
 
@@ -1819,6 +1822,11 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background-color: (0, 0, 0, 0.8);
 }
 
+.elements-banner {
+    background-image: url(../images/inner-banner/elements.jpg);
+    background-color: (0, 0, 0, 0.8);
+}
+
 .our-team-banner {
     background-image: url(../images/inner-banner/team.jpg);
     background-color: (0, 0, 0, 0.8);
@@ -2354,25 +2362,824 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-/*----- 17. Carrer -----*/
+
+/*----- 17. Career -----*/
+
 label.label-text-f {
     display: block;
     padding: 5px 20px 0 0;
 }
+
 .customfile-filename {
     width: 80% !important;
     display: inline !important;
     background: transparent !important;
 }
+
 button.customfile-upload {
     width: 20%;
-        padding: 3px 0;
-        background: #febb1e;
-        color: #272727;
-        text-transform: uppercase;
-        font-size: 12px;
-        height: 47px;
-        font-weight: 700;
+    padding: 3px 0;
+    background: #febb1e;
+    color: #272727;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 47px;
+    font-weight: 700;
+}
+
+/*----- 18. Elements -----*/
+
+.custom-tabs .tablist-heading {
+    border: none;
+    display: inline-flex;
+}
+
+.custom-tabs.horizontal-tab .tablist-heading li a, .custom-tabs.horizontal-icon-tab .tablist-heading li a {
+    background: #272727;
+    text-align: center;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+    transition: 0.5s
+}
+
+.custom-tabs.horizontal-tab .tablist-heading li a.active, .custom-tabs.horizontal-tab .tablist-heading li a:hover, .custom-tabs.horizontal-icon-tab .tablist-heading li a.active, .custom-tabs.horizontal-icon-tab .tablist-heading li a:hover {
+    background: #febb1d;
+    border: none;
+    color: #272727;
+}
+
+.custom-tabs.horizontal-tab .tab-content, .custom-tabs.vertical-tab .tab-content, .custom-tabs.horizontal-icon-tab .tab-content {
+    border: 1px solid #f0f0f0;
+    padding: 15px;
+}
+
+.custom-tabs .tab-content h4.tab-heding {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #febb1d;
+}
+
+.nav-tabs--vertical {
+    border-bottom: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.nav-tabs--left .nav-link {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+    background: #272727;
+}
+
+.nav-tabs--left .nav-link.active, .nav-tabs--left .nav-link:hover {
+    border: none;
+    border-radius: 0;
+    background: #febb1d;
+    color: #272727;
+}
+
+.nav-tabs--left .nav-link.active:hover {
+    background-color: #fff;
+    border-color: #0275d8 #fff #0275d8 #0275d8;
+}
+
+i.fa.icon-tab {
+    font-size: 39px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.default-accodion .panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.default-accodion .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.default-accodion .panel-group .panel .panel-heading .panel-title a {
+    padding: 15px 20px 15px 45px;
+    display: block;
+    text-decoration: none !important;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 15px 0 0;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.default-accodion .panel-group .panel.on .panel-heading .panel-title a:before {
+    content: "\f068";
+}
+
+.default-accodion .panel-group .panel .panel-heading .panel-title a:before {
+    content: "\f067";
+    top: 18px;
+    left: 21px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'FontAwesome';
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+}
+
+.default-accodion .panel-group .panel .panel-heading .panel-title a:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 14px;
+    top: 16px;
+    z-index: 1;
+    background: #000;
+    border-radius: 2px;
+}
+
+.default-accodion .panel-body {
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+select.multi-select {
+    height: 130px;
+}
+
+.tgl {
+    display: none;
+}
+
+.tg-list-item {
+    display: inline-flex;
+    margin: 10px 30px 0 0px;
+    width: auto;
+    float: left;
+    line-height: 30px;
+}
+
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl+.tgl-btn {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl+.tgl-btn::-moz-selection {
+    background: none;
+}
+
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl+.tgl-btn::selection {
+    background: none;
+}
+
+.tgl+.tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tgl+.tgl-btn:after, .tgl+.tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.tgl+.tgl-btn:after {
+    left: 0;
+}
+
+.tgl+.tgl-btn:before {
+    display: none;
+}
+
+.tgl:checked+.tgl-btn:after {
+    left: 50%;
+}
+
+.tgl-ios+.tgl-btn {
+    background: #fbfbfb;
+    border-radius: 2em;
+    padding: 2px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    border: 1px solid #e8eae9;
+    margin: 0 5px;
+}
+
+.tgl-ios+.tgl-btn:after {
+    border-radius: 2em;
+    background: #fbfbfb;
+    -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.tgl-ios+.tgl-btn:hover:after {
+    will-change: padding;
+}
+
+.tgl-ios+.tgl-btn:active {
+    -webkit-box-shadow: inset 0 0 0 2em #e8eae9;
+    box-shadow: inset 0 0 0 2em #e8eae9;
+}
+
+.tgl-ios+.tgl-btn:active:after {
+    padding-right: .8em;
+}
+
+.tgl-ios:checked+.tgl-btn {
+    background: #febb1d;
+}
+
+.tgl-ios:checked+.tgl-btn:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.tgl-ios:checked+.tgl-btn:active:after {
+    margin-left: -.8em;
+}
+
+.full-width-btn {
+    width: 100%;
+}
+
+.btn-default {
+    background: #272727;
+    color: #fff
+}
+
+.btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-light, .btn-info, .btn-warning {
+    border: none
+}
+
+.btn-outline-default {
+    background: transparent;
+    border: 2px solid #272727;
+    color: #272727;
+}
+
+.btn-outline-default:hover, .btn-outline-default:active {
+    border: 2px solid #272727;
+    background: #272727;
+    color: #fff;
+}
+
+.btn-outline-site-button {
+    background: transparent;
+    border: 2px solid #FEBB1E;
+    color: #FEBB1E;
+}
+
+.btn-outline-site-button:hover, .btn-outline-site-button:active {
+    border: 2px solid #FEBB1E;
+    background: #FEBB1E;
+    color: #fff
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-success {
+    background: transparent;
+    border: 2px solid #28a745;
+    color: #28a745;
+}
+
+.btn-outline-danger {
+    background: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-info {
+    background: transparent;
+    border: 2px solid #17a2b8;
+    color: #17a2b8;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header, .modal-footer {
+    padding: 15px;
+}
+
+.modal-body {
+    padding: 20px 30px 25px;
+}
+
+.modal-footer .btn {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.modal-body p:last-child {
+    margin-bottom: 0;
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+}
+
+h6.modal-title {
+    float: left;
+    display: block;
+    position: absolute;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FEBB1E;
+}
+
+.progressbar .candidatos {
+    position: relative;
+    height: 40px;
+    margin: 25px 0;
+}
+
+.progressbar .candidatos .parcial {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+}
+
+.progressbar .candidatos .parcial .info {
+    height: 15px;
+    position: relative;
+}
+
+.progressbar .candidatos .parcial .info>div {
+    float: left;
+}
+
+.progressbar .candidatos .parcial .info .nome {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #febb1e;
+    letter-spacing: 1px;
+}
+
+.progressbar .candidatos .parcial .info .eleito, .progressbar .candidatos .parcial .info .segundo-turno {
+    color: #fff;
+    padding: 0 5px 2px 5px;
+    border-radius: 2px;
+}
+
+.progressbar .candidatos .parcial .info .percentagem-num {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #272727;
+}
+
+.progressbar .candidatos .parcial .progressBar {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 5px 0 2px;
+    border-radius: 10px;
+    background: #e7e7e7;
+}
+
+.progressbar .candidatos .parcial .progressBar .percentagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #A4B5C0;
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+}
+
+.progressbar .candidatos.skill-two .parcial .percentagem {
+    background-color: #56BA62;
+}
+
+.progressbar .candidatos.skill-four .parcial .percentagem {
+    background-color: #4086CD;
+}
+
+.progressbar .candidatos.skill-one .parcial .percentagem {
+    background-color: #C44738;
+}
+
+.progressbar .candidatos.skill-three .parcial .percentagem {
+    background-color: #272726;
+}
+
+.progressbar .candidatos .parcial .partidas {
+    font-family: Arial, helvetica, Sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #9e9c9b;
+    text-transform: uppercase;
+}
+
+.percentual {
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+    transition: 5s all;
+    animation-duration: 5s;
+    animation-name: animationProgress;
+}
+
+@-webkit-keyframes animationProgress {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes animationProgress {
+    from {
+        width: 0;
+    }
+}
+
+/*----- 19. Social Share Icons -----*/
+
+.social-buttons.social-buttons-one .social-button {
+    display: inline-block;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 25%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-buttons.social-buttons-one .social-button:before {
+    content: '';
+    background-color: #000;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-buttons.social-buttons-one .social-button .fa {
+    font-size: 25px;
+    vertical-align: middle;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-buttons.social-buttons-one .social-button.facebook:before, .social-platforms .social-button.facebook>span {
+    background-color: #3B5998;
+}
+
+.social-buttons.social-buttons-one .social-button.facebook .fa, .social-wrapper .social-button.facebook .fa {
+    color: #3B5998;
+}
+
+.social-buttons.social-buttons-one .social-button.twitter:before, .social-platforms .social-button.twitter>span {
+    background-color: #55acee;
+}
+
+.social-buttons.social-buttons-one .social-button.twitter .fa, .social-wrapper .social-button.twitter .fa {
+    color: #55acee;
+}
+
+.social-buttons.social-buttons-one .social-button.google:before, .social-platforms .social-button.google>span {
+    background-color: #dd4b39;
+}
+
+.social-buttons.social-buttons-one .social-button.google .fa, .social-wrapper .social-button.google .fa {
+    color: #dd4b39;
+}
+
+.social-buttons.social-buttons-one .social-button.linkedin:before, .social-platforms .social-button.linkedin>span {
+    background-color: #007bb5;
+}
+
+.social-buttons.social-buttons-one .social-button.linkedin .fa, .social-wrapper .social-button.linkedin .fa {
+    color: #007bb5;
+}
+
+.social-buttons.social-buttons-one .social-button.website:before, .social-platforms .social-button.website>span {
+    background-color: #767676;
+}
+
+.social-buttons.social-buttons-one .social-button.website .fa, .social-wrapper .social-button.website .fa {
+    color: #767676;
+}
+
+.social-buttons.social-buttons-one .social-button.email:before, .social-platforms .social-button.email>span {
+    background-color: #4caf50;
+}
+
+.social-buttons.social-buttons-one .social-button.email .fa, .social-wrapper .social-button.email .fa {
+    color: #4caf50;
+}
+
+.social-buttons.social-buttons-one .social-button.dribbble:before, .social-platforms .social-button.dribbble>span {
+    background-color: #F26798;
+}
+
+.social-buttons.social-buttons-one .social-button.dribbble .fa, .social-wrapper .social-button.dribbble .fa {
+    color: #F26798;
+}
+
+.social-buttons.social-buttons-one .social-button.youtube:before, .social-platforms .social-button.youtube>span {
+    background-color: #bb0000;
+}
+
+.social-buttons.social-buttons-one .social-button.youtube .fa, .social-wrapper .social-button.youtube .fa {
+    color: #bb0000;
+}
+
+.social-buttons.social-buttons-one .social-button.instagram:before, .social-platforms .social-button.instagram>span {
+    background-color: #e95950;
+}
+
+.social-buttons.social-buttons-one .social-button.instagram .fa, .social-wrapper .social-button.instagram .fa {
+    color: #e95950;
+}
+
+.social-buttons.social-buttons-one .social-button.whatsapp:before, .social-platforms .social-button.whatsapp>span {
+    background-color: #4dc247;
+}
+
+.social-buttons.social-buttons-one .social-button.whatsapp .fa, .social-wrapper .social-button.whatsapp .fa {
+    color: #4dc247;
+}
+
+.social-buttons.social-buttons-one .social-button.pinterest:before, .social-platforms .social-button.pinterest>span {
+    background-color: #cb2027;
+}
+
+.social-buttons.social-buttons-one .social-button.pinterest .fa, .social-wrapper .social-button.pinterest .fa {
+    color: #cb2027;
+}
+
+.social-buttons.social-buttons-one .social-button.vine:before, .social-platforms .social-button.vine>span {
+    background-color: #00bf8f;
+}
+
+.social-buttons.social-buttons-one .social-button.vine .fa, .social-wrapper .social-button.vine .fa {
+    color: #00bf8f;
+}
+
+.social-buttons.social-buttons-one .social-button.dropbox:before, .social-platforms .social-button.dropbox>span {
+    background-color: #007ee5;
+}
+
+.social-buttons.social-buttons-one .social-button.dropbox .fa, .social-wrapper .social-button.dropbox .fa {
+    color: #007ee5;
+}
+
+.social-buttons.social-buttons-one .social-button.flickr:before, .social-platforms .social-button.flickr>span {
+    background-color: #ff0084;
+}
+
+.social-buttons.social-buttons-one .social-button.flickr .fa, .social-wrapper .social-button.flickr .fa {
+    color: #ff0084;
+}
+
+.social-buttons.social-buttons-one .social-button.tumblr:before, .social-platforms .social-button.tumblr>span {
+    background-color: #32506d;
+}
+
+.social-buttons.social-buttons-one .social-button.tumblr .fa, .social-wrapper .social-button.tumblr .fa {
+    color: #32506d;
+}
+
+.social-buttons.social-buttons-one .social-button.vk:before, .social-platforms .social-button.vk>span {
+    background-color: #ff0084;
+}
+
+.social-buttons.social-buttons-one .social-button.vk .fa, .social-wrapper .social-button.vk .fa {
+    color: #ff0084;
+}
+
+.social-buttons.social-buttons-one .social-button.foursquare:before, .social-platforms .social-button.foursquare>span {
+    background-color: #0072b1;
+}
+
+.social-buttons.social-buttons-one .social-button.foursquare .fa, .social-wrapper .social-button.foursquare .fa {
+    color: #0072b1;
+}
+
+.social-buttons.social-buttons-one .social-button.spotify:before, .social-platforms .social-button.spotify>span {
+    background-color: #00e461;
+}
+
+.social-buttons.social-buttons-one .social-button.spotify .fa, .social-wrapper .social-button.spotify .fa {
+    color: #00e461;
+}
+
+.social-buttons.social-buttons-one .social-button.github:before, .social-platforms .social-button.github>span {
+    background-color: #000000;
+}
+
+.social-buttons.social-buttons-one .social-button.github .fa, .social-wrapper .social-button.github .fa {
+    color: #000000;
+}
+
+.social-buttons.social-buttons-one .social-button.behance:before, .social-platforms .social-button.behance>span {
+    background-color: #1769ff;
+}
+
+.social-buttons.social-buttons-one .social-button.behance .fa, .social-wrapper .social-button.behance .fa {
+    color: #1769ff;
+}
+
+.social-buttons.social-buttons-one .social-button.rss:before, .social-platforms .social-button.rss>span {
+    background-color: #ff6600;
+}
+
+.social-buttons.social-buttons-one .social-button.rss .fa, .social-wrapper .social-button.rss .fa {
+    color: #ff6600;
+}
+
+.social-buttons.social-buttons-one .social-button:focus:before, .social-buttons.social-buttons-one .social-button:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-buttons.social-buttons-one .social-button:focus .fa, .social-buttons.social-buttons-one .social-button:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.social-wrapper.social-button-two a.social-button i {
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.social-wrapper.social-button-two a.social-button i:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.social-platforms {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-platforms.social-button-three .social-button {
+    clear: both;
+    white-space: nowrap;
+    font-size: .8em;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+    margin: 5px 2px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden
+}
+
+.social-platforms.social-button-three .social-button:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.social-platforms.social-button-three .social-button:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.social-platforms.social-button-three .social-button>span, .social-platforms.social-button-three .social-button>i {
+    float: left;
+    padding: 13px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    line-height: 1em
+}
+
+.social-platforms.social-button-three .social-button>span {
+    padding: 15px 23px 15px;
+    white-space: nowrap;
+    color: #FFF;
+}
+
+.social-platforms.social-button-three .social-button:focus>span {
+    background: #9a9a9a
+}
+
+.social-platforms.social-button-three .social-button>i {
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    width: 41px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #272727;
+}
+
+.social-platforms.social-button-three .social-button>i:after {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent transparent #272727;
+    position: absolute;
+    top: 13px;
+    right: -15px
+}
+
+.social-platforms.social-button-three .social-button:hover>i, .social-button:focus>i {
+    color: #FFF
+}
+
+.social-platforms.social-button-three .social-button>span {
+    border-radius: 0 5px 5px 0
 }
 
 /*----- G. Pagination -----*/
