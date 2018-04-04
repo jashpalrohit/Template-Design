@@ -14,6 +14,10 @@
         background: #fff;
         padding: 0;
     }
+    img.service-center-img {
+        margin: 10% auto 0;
+        display: block;
+    }
     .custom-tabs.horizontal-tab .tablist-heading li a, .custom-tabs.horizontal-icon-tab .tablist-heading li a {
         font-size: 14px;
         padding: 10px;

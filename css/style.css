@@ -24,6 +24,9 @@
         17. Career
         18. Elements
         19. Social Share Icons
+        20. Construction Fonts Include
+        21. Services
+        22. Projects List
         G. Pagination
         F. Blog
         E. Pricing Table
@@ -1836,7 +1839,10 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background-image: url(../images/inner-banner/career.jpg);
     background-color: (0, 0, 0, 0.8);
 }
-
+.project-banner {
+    background-image: url(../images/inner-banner/project.jpg);
+    background-color: (0, 0, 0, 0.8);
+}
 .inner-page-name .inner-page-box {
     border: 2px solid #fff;
     margin: 0px auto;
@@ -3182,6 +3188,494 @@ h6.modal-title {
     border-radius: 0 5px 5px 0
 }
 
+/*----- 20. Construction Fonts Include -----*/
+
+@font-face {
+    font-family: 'icofont';
+    src: url('../fonts/icofont.eot?v=1.0.0-beta');
+    src: url('../fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'), url('../fonts/icofont.ttf?v=1.0.0-beta') format('truetype'), url('../fonts/icofont.woff?v=1.0.0-beta') format('woff'), url('../fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icofont {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icofont-architecture-alt:before {
+    content: "\ebc3";
+}
+
+.icofont-architecture:before {
+    content: "\ebc4";
+}
+
+.icofont-barricade:before {
+    content: "\ebc5";
+}
+
+.icofont-bricks:before {
+    content: "\ebc6";
+}
+
+.icofont-calculations:before {
+    content: "\ebc7";
+}
+
+.icofont-cement-mix:before {
+    content: "\ebc8";
+}
+
+.icofont-cement-mixer:before {
+    content: "\ebc9";
+}
+
+.icofont-danger-zone:before {
+    content: "\ebca";
+}
+
+.icofont-drill:before {
+    content: "\ebcb";
+}
+
+.icofont-eco-energy:before {
+    content: "\ebcc";
+}
+
+.icofont-eco-environmen:before {
+    content: "\ebcd";
+}
+
+.icofont-energy-air:before {
+    content: "\ebce";
+}
+
+.icofont-energy-oil:before {
+    content: "\ebcf";
+}
+
+.icofont-energy-savings:before {
+    content: "\ebd0";
+}
+
+.icofont-energy-solar:before {
+    content: "\ebd1";
+}
+
+.icofont-energy-water:before {
+    content: "\ebd2";
+}
+
+.icofont-engineer:before {
+    content: "\ebd3";
+}
+
+.icofont-fire-extinguisher-alt:before {
+    content: "\ebd4";
+}
+
+.icofont-fix-tools:before {
+    content: "\ebd5";
+}
+
+.icofont-glue-oil:before {
+    content: "\ebd6";
+}
+
+.icofont-hammer-alt:before {
+    content: "\ebd7";
+}
+
+.icofont-help-robot:before {
+    content: "\ebd8";
+}
+
+.icofont-industries-alt-1:before {
+    content: "\ebd9";
+}
+
+.icofont-industries-alt-2:before {
+    content: "\ebda";
+}
+
+.icofont-industries-alt-3:before {
+    content: "\ebdb";
+}
+
+.icofont-industries-alt-4:before {
+    content: "\ebdc";
+}
+
+.icofont-industries-alt-5:before {
+    content: "\ebdd";
+}
+
+.icofont-industries:before {
+    content: "\ebde";
+}
+
+.icofont-labour:before {
+    content: "\ebdf";
+}
+
+.icofont-mining:before {
+    content: "\ebe0";
+}
+
+.icofont-paint-brush:before {
+    content: "\ebe1";
+}
+
+.icofont-pollution:before {
+    content: "\ebe2";
+}
+
+.icofont-power-zone:before {
+    content: "\ebe3";
+}
+
+.icofont-radio-active:before {
+    content: "\ebe4";
+}
+
+.icofont-recycle-alt:before {
+    content: "\ebe5";
+}
+
+.icofont-recycling-man:before {
+    content: "\ebe6";
+}
+
+.icofont-safety-hat-light:before {
+    content: "\ebe7";
+}
+
+.icofont-safety-hat:before {
+    content: "\ebe8";
+}
+
+.icofont-saw:before {
+    content: "\ebe9";
+}
+
+.icofont-screw-driver:before {
+    content: "\ebea";
+}
+
+.icofont-settings-alt:before {
+    content: "\ebeb";
+}
+
+.icofont-tools-alt-1:before {
+    content: "\ebec";
+}
+
+.icofont-tools-alt-2:before {
+    content: "\ebed";
+}
+
+.icofont-tools-bag:before {
+    content: "\ebee";
+}
+
+.icofont-trolley:before {
+    content: "\ebef";
+}
+
+.icofont-trowel:before {
+    content: "\ebf0";
+}
+
+.icofont-under-construction-alt:before {
+    content: "\ebf1";
+}
+
+.icofont-under-construction:before {
+    content: "\ebf2";
+}
+
+.icofont-vehicle-cement:before {
+    content: "\ebf3";
+}
+
+.icofont-vehicle-crane:before {
+    content: "\ebf4";
+}
+
+.icofont-vehicle-delivery-van:before {
+    content: "\ebf5";
+}
+
+.icofont-vehicle-dozer:before {
+    content: "\ebf6";
+}
+
+.icofont-vehicle-excavator:before {
+    content: "\ebf7";
+}
+
+.icofont-vehicle-trucktor:before {
+    content: "\ebf8";
+}
+
+.icofont-vehicle-wrecking:before {
+    content: "\ebf9";
+}
+
+.icofont-worker-group:before {
+    content: "\ebfa";
+}
+
+.icofont-worker:before {
+    content: "\ebfb";
+}
+
+.icofont-wrench:before {
+    content: "\ebfc";
+}
+
+/*Font size*/
+
+.icofont-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%
+}
+
+.icofont-2x {
+    font-size: 2em
+}
+
+.icofont-3x {
+    font-size: 3em
+}
+
+.icofont-4x {
+    font-size: 4em
+}
+
+.icofont-5x {
+    font-size: 5em
+}
+
+.icofont-fw {
+    display: inline-block;
+    width: 1.28571429em;
+    text-align: center
+}
+
+/*Fixed Width Icons*/
+
+.icofont-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+/*Custom list icons*/
+
+.icofont-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+
+.icofont-ul>li {
+    position: relative;
+}
+
+.icofont-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: .14285714em;
+    text-align: center;
+}
+
+/*Animation*/
+
+.icofont-rotate {
+    display: inline-block;
+    -webkit-animation: icofont-rotate 2s infinite linear;
+    animation: icofont-rotate 2s infinite linear
+}
+
+@-webkit-keyframes icofont-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes icofont-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+/*----- 21. Services -----*/
+
+.our-services .service-item {
+    background: #ebf6ff;
+    padding: 15px;
+    margin: 30px 0 0 0;
+    transition: 0.5s;
+    position: relative;
+}
+
+.our-services .service-item h6 {
+    font-size: 20px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #272727;
+}
+
+.our-services .service-item:hover {
+    background: #272727;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.our-services .service-item .service-icon {
+    font-size: 85px;
+    color: #272727;
+}
+
+.our-services .service-item:hover h6, .our-services .service-item:hover .service-icon {
+    color: #febb1d;
+}
+
+.our-services .service-item:hover p {
+    color: #fff
+}
+
+.btnBefore, .btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #febb1d;
+    border-width: 0;
+    border-radius: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #febb1d;
+    border-radius: 0;
+}
+
+.our-services .service-item .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+
+.our-services .service-item .btnAfter {
+    left: 0;
+    top: 0;
+}
+
+.our-services .service-item:hover .btnBefore {
+    border-width: 0 0 3px 3px;
+}
+
+.our-services .service-item:hover .btnAfter {
+    border-width: 3px 3px 0 0;
+}
+
+.our-services .service-item:hover .btnAfter, .our-services .service-item:hover .btnBefore {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+
+img.service-center-img {
+    margin: 35% auto;
+    display: block;
+}
+/*----- 22. Projects List -----*/
+.project-block-one .wb-grid.wb-grid-stripe, .project-block-two .wb-grid {
+    width: 100%;
+}
+.project-block-one .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
+    color: #febb1d;
+    border-color: #febb1d;
+    cursor: default;
+}
+.project-block-one .cbp-l-filters-buttonCenter .cbp-filter-counter {
+    background-color: #febb1d;
+    color: #272727
+}
+.project-block-one .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
+    border-top: 4px solid #febb1d;
+}
+.project-block-one .cbp-l-grid-masonry-projects .cbp-caption-activeWrap {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.project-block-one .cbp-item-wrapper {
+    background: #f7faff;
+    padding: 5px;
+}
+.project-block-one .cbp-l-grid-masonry-projects-title {
+    font: inherit;
+    color: #febb1d;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.project-block-one .more-info-popup-btn {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    background: #272727;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.project-block-one .more-info-popup-btn:hover {
+    background: #fff;
+    color: #272727;
+}
+.project-block-one .cbp-l-grid-masonry-projects-desc {
+    font: inherit;
+    color: #272727;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.project-block-one .cbp-l-grid-masonry-projects-title:hover {
+    color: #272727;
+}
 /*----- G. Pagination -----*/
 
 .clear:after, .pagination:after, .clear:before, .pagination:before {
