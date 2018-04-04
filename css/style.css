@@ -27,6 +27,7 @@
         20. Construction Fonts Include
         21. Services
         22. Projects List
+        23. Gallery
         G. Pagination
         F. Blog
         E. Pricing Table
@@ -1843,6 +1844,12 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background-image: url(../images/inner-banner/project.jpg);
     background-color: (0, 0, 0, 0.8);
 }
+
+.gallery-banner {
+    background-image: url(../images/inner-banner/gallery.jpg);
+    background-color: (0, 0, 0, 0.8);
+}
+
 .inner-page-name .inner-page-box {
     border: 2px solid #fff;
     margin: 0px auto;
@@ -3676,11 +3683,29 @@ img.service-center-img {
 .project-block-one .cbp-l-grid-masonry-projects-title:hover {
     color: #272727;
 }
+
+/*----- 23. Gallery -----*/
+.gallery-one .wb-grid {
+    width: 100%;
+}
+.gallery-one .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
+    color: #febb1d;
+    border-color: #febb1d;
+    cursor: default;
+}
+.gallery-one .cbp-l-filters-buttonCenter .cbp-filter-counter {
+    background-color: #febb1d;
+    color: #272727
+}
+.gallery-one .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
+    border-top: 4px solid #febb1d;
+}
+
 /*----- G. Pagination -----*/
 
 .clear:after, .pagination:after, .clear:before, .pagination:before {
     content: "";
-    display: table;
+    d.gallery-oneisplay: table;
 }
 
 .clear:after, .pagination:after {
