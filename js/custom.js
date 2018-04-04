@@ -288,9 +288,196 @@ $(document).ready(function($) {
 
 });
 // 11. End Blog Share
-// 13. Start Circle ProgressBar
+// 13. Start Project Demo One
+(function($, window, document, undefined) {
+    'use strict';
 
-// 13. End Circle ProgressBar
+    // init cubeportfolio
+    $('#js-grid-awesome-work').cubeportfolio({
+        filters: '#js-filters-awesome-work',
+        layoutMode: 'grid',
+        defaultFilter: '*',
+        animationType: 'scaleSides',
+        gapHorizontal: 30,
+        gapVertical: 30,
+        gridAdjustment: 'responsive',
+        mediaQueries: [{
+            width: 1500,
+            cols: 4,
+        }, {
+            width: 1100,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                gapHorizontal: 15,
+                gapVertical: 15,
+            }
+        }],
+        caption: 'zoom',
+        displayType: 'fadeIn',
+        displayTypeSpeed: 400,
+
+        // singlePage popup
+        singlePageDelegate: '.cbp-singlePage',
+        singlePageDeeplinking: true,
+        singlePageStickyNavigation: true,
+        singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
+        singlePageCallback: function(url, element) {
+            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+            var t = this;
+
+            $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    timeout: 10000
+                })
+                .done(function(result) {
+                    t.updateSinglePage(result);
+                })
+                .fail(function() {
+                    t.updateSinglePage('AJAX Error! Please refresh the page!');
+                });
+        },
+
+        plugins: {
+            loadMore: {
+                element: '#js-loadMore-awesome-work',
+                action: 'click',
+                loadItems: 3,
+            }
+        },
+    });
+})(jQuery, window, document);
+// 13. End Project Demo One
+// 14. Full Screen Projects Demo Two
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-lightbox-gallery').cubeportfolio({
+        filters: '#js-filters-lightbox-gallery1, #js-filters-lightbox-gallery2',
+        layoutMode: 'grid',
+        mediaQueries: [{
+            width: 1500,
+            cols: 4,
+        }, {
+            width: 1100,
+            cols: 3,
+        }, {
+            width: 800,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                caption: '',
+            }
+        }],
+        defaultFilter: '*',
+        animationType: 'flipOutDelay',
+        gapHorizontal: 10,
+        gapVertical: 10,
+        gridAdjustment: 'responsive',
+        caption: 'overlayBottomAlong',
+        displayType: 'sequentially',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+
+        // singlePageInline
+        singlePageInlineDelegate: '.cbp-singlePageInline',
+        singlePageInlinePosition: 'below',
+        singlePageInlineInFocus: true,
+        singlePageInlineCallback: function(url, element) {
+            // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+            var t = this;
+
+            $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    timeout: 10000
+                })
+                .done(function(result) {
+
+                    t.updateSinglePageInline(result);
+
+                })
+                .fail(function() {
+                    t.updateSinglePageInline('AJAX Error! Please refresh the page!');
+                });
+        },
+
+        plugins: {
+            loadMore: {
+                element: '#js-loadMore-lightbox-gallery',
+                action: 'click',
+                loadItems: 3,
+            }
+        },
+    });
+})(jQuery, window, document);
+// 14. Full Screen Projects Demo Two
+// 15. Gallery Demo One
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-mosaic').cubeportfolio({
+        filters: '#js-filters-mosaic',
+        layoutMode: 'mosaic',
+        sortToPreventGaps: true,
+        mediaQueries: [{
+            width: 1500,
+            cols: 5,
+        }, {
+            width: 1100,
+            cols: 4,
+        }, {
+            width: 800,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                caption: '',
+                gapHorizontal: 15,
+                gapVertical: 15,
+            }
+        }],
+        defaultFilter: '*',
+        animationType: 'quicksand',
+        gapHorizontal: 0,
+        gapVertical: 0,
+        gridAdjustment: 'responsive',
+        caption: 'zoom',
+        displayType: 'sequentially',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+
+        plugins: {
+            loadMore: {
+                element: '#js-loadMore-mosaic',
+                action: 'click',
+                loadItems: 3,
+            }
+        },
+    });
+})(jQuery, window, document);
+
+// 15. Gallery Demo Two
 // 12. Start Google Map
 google.maps.event.addDomListener(window, 'load', init);
 
