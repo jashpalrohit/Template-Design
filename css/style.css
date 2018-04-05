@@ -26,15 +26,17 @@
         19. Social Share Icons
         20. Construction Fonts Include
         21. Services
-        22. Projects List
+        22. Projects
         23. Gallery
-        G. Pagination
-        F. Blog
-        E. Pricing Table
-        A. Contact Us Page
-        B. Google Map
-        C. Back to Top
-        D. Footer
+        24. News and Events
+        25. Error
+        26. Pagination
+        27. Blog
+        28. Pricing Table
+        29. Contact Us Page
+        30. Google Map
+        31. Back to Top
+        32. Footer
 ---------------------------------------*/
 
 /*----- 1. Loader -----*/
@@ -1849,7 +1851,10 @@ section.home-three-services .single_service-block:hover h2, section.home-three-s
     background-image: url(../images/inner-banner/gallery.jpg);
     background-color: (0, 0, 0, 0.8);
 }
-
+.news-banner {
+    background-image: url(../images/inner-banner/news.jpg);
+    background-color: (0, 0, 0, 0.8);
+}
 .inner-page-name .inner-page-box {
     border: 2px solid #fff;
     margin: 0px auto;
@@ -3627,7 +3632,7 @@ img.service-center-img {
     margin: 35% auto;
     display: block;
 }
-/*----- 22. Projects List -----*/
+/*----- 22. Projects -----*/
 .project-block-one .wb-grid.wb-grid-stripe, .project-block-two .wb-grid {
     width: 100%;
 }
@@ -3684,6 +3689,169 @@ img.service-center-img {
     color: #272727;
 }
 
+.projects-details-page ul.project-details_nav {
+    margin-top: 0;
+    padding: 0 15px;
+    text-align: left;
+    border-radius: 2px;
+    background: #272727;
+    border: none;
+}
+.projects-details-page ul.project-details_nav > li > a {
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+}
+.projects-details-page ul.project-details_nav > li {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.projects-details-page ul.project-details_nav > li > a.active {
+    background-color: #f9f9f9;
+    box-shadow: 0 -3px 0 0 #febb1d;
+}
+.projects-details-page ul.project-details_nav > li > a.active {
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #febb1d;
+}
+.projects-details-page .project-details_tabs {
+    padding: 30px 20px;
+    background: #f9f9f9;
+    position: relative;
+}
+.projects-details-page .specification-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+.projects-details-page .specification-list > li {
+    padding-right: 20px;
+}
+.projects-details-page .specification-list li {
+    padding-left: 20px;
+}
+.projects-details-page .specification-list li {
+    position: relative;
+    margin-bottom: 5px;
+}
+.projects-details-page .specification-list li:before {
+    top: 8px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background-color: #febb1d;
+}
+.projects-details-page .specification-list li:before {
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.projects-details-page .more-details-title {
+    font-size: 25px;
+    margin: 35px 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #febb1d;
+}
+.projects-details-page .top-project-title {
+    padding: 30px 20px;
+    margin: 0 0 20px;
+    background: #f7f7f7;
+    width: 100%;
+    outline: 1px solid #febb1d;
+    outline-offset: -13px;
+}
+.projects-details-page .top-project-title__header {
+    outline: 1px solid #febb1d;
+    outline-offset: 12px;
+}
+.projects-details-page .top-project-title .project_main_title {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #febb1d;
+    margin: 0;
+    line-height: normal;
+}
+.projects-details-page .top-project-title .project_main_subtitle {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #272727;
+    margin: 0
+}
+.projects-details-page .project-description {
+    margin: 15px 0 30px;
+}
+#owl-single-project .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#owl-single-project .owl-controls {
+    margin: -30px 0 10px;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+#owl-single-project {
+    border: 1px solid #e6e6e6;
+    padding: 5px 5px 0;
+}
+.releted-projects .home-news-slide .single-news .image .date {
+    left: 0;
+    right: 0 !important;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.releted-projects .home-news-slide  .news-content a{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.releted-projects .home-news-slide .single-news .news-content {
+    padding: 20px;
+    margin-top: 15px;
+}
+.project-brief-details.project-info {
+    background: #272727;
+    color: #fff;
+    padding: 40px 30px;
+    outline: 1px solid rgba(238, 238, 238, 0.33);
+    outline-offset: -10px;
+    border: 10px solid #f9f9f9;
+    position: absolute;
+    top: -25%;
+    right: 3%;
+}
+.project-info.project-brief-details h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #febb1d;
+}
+.project-brief-details.project-info ul {
+    list-style: none;
+    padding: 0;
+}
+.project-brief-details.project-info li {
+    padding-top: 10px;
+}
+.project-brief-details.project-info strong {
+    min-width: 130px;
+    display: inline-block;
+    color: #febb1d;
+}
 /*----- 23. Gallery -----*/
 .gallery-one .wb-grid {
     width: 100%;
@@ -3700,8 +3868,300 @@ img.service-center-img {
 .gallery-one .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
     border-top: 4px solid #febb1d;
 }
+/*----- 24. News and Events -----*/
+.news-events-page .single-news-eve {
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.5s
+}
+.news-events-page .single-news-eve:hover {
+    box-shadow: 5px 7px 15px -5px rgba(0, 0, 0, 0.36);
+    transform: translateY(-10px);
+}
+.news-events-page .news-events-img {
+    position: relative;
+}
+.news-events-page .news-events-label {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #febb1d;
+}
+.news-events-page .news-events-desc {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+    color: #888;
+    border: 1px solid #eee;
+}
+.news-events-page .news-events-desc-item {
+    display: table-cell;
+    line-height: 48px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+.news-events-page .news-events-namee {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.news-events-page .news-events-namee:before {
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    margin-top: -2px;
+    margin-right: 15px;
+    content: '';
+    vertical-align: middle;
+    background-color: #febb1d;
+}
+.news-events-page .news-events-namee a {
+    color: #272727;
+}
+.news-eve-description {
+    padding: 10px 15px;
+    background: #fff
+}
+.news-events-page .single-news-eve:hover .news-events-img:after{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-/*----- G. Pagination -----*/
+
+.news-events-page .single-news-eve .btnBefore, .news-events-page .single-news-eve .btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #febb1d;
+    border-width: 0;
+    border-radius: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #febb1d;
+    border-radius: 0;
+}
+.news-events-page .single-news-eve .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+.news-events-page .single-news-eve .btnAfter {
+    left: 0;
+    top: 0;
+}
+.news-events-page .single-news-eve:hover .btnBefore {
+    border-width: 0 0 1px 1px;
+}
+.news-events-page .single-news-eve:hover .btnAfter {
+    border-width: 1px 1px 0 0;
+}
+.news-events-page .single-news-eve:hover .btnAfter, .news-events-page .single-news-eve:hover .btnBefore {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+
+/*----- 25. Error -----*/
+.error-block-page{
+    position: relative;
+    min-height: 500px;
+}
+.ghost {
+    width: 125px;
+        height: 200px;
+        background-color: #f8f8f8;
+        border: 3px solid #979797;
+        position: absolute;
+        margin: auto;
+        top: 40%;
+        left: 0;
+        right: 0;
+        border-radius: 150px 150px 7px 7px;
+        -webkit-animation: ghost 1.5s ease-in-out alternate infinite;
+        animation: ghost 1.5s ease-in-out alternate infinite;
+        z-index: 1;
+}
+
+.corner {
+    width: 21px;
+        height: 21px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        border: 3px solid #979797;
+        position: absolute;
+        margin-top: 184px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: -1;
+        border-right: 0;
+        border-bottom: 0;
+}
+.corner.two {
+  margin-left: 33px;
+}
+.corner.three {
+  margin-left: 66px;
+}
+.corner.four {
+  margin-left: 98px;
+}
+
+
+
+.eye {
+  width: 10px; height: 10px;
+  border-radius: 10px;
+  background-color: #979797;
+  position: absolute; margin: 50px auto;
+  left: 0;right: 0;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+.eye.two {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+
+.mouth {
+  width: 40px; height: 4px;
+  border-radius: 10px;
+  background-color: #979797;
+  position: absolute; margin: 75px auto;
+  left: 0;right: 0;
+}
+.tonge {
+  width: 4px; height: 10px;
+  border-radius: 0px 0px 50px 50px;
+  background-color: #979797;
+  position: absolute; margin: 2px auto;
+  left: 0;right: 0;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  border-left: 5px solid rgba(0,0,0,.3);
+  border-right: 5px solid rgba(0,0,0,.3);
+  border-bottom: 5px solid rgba(0,0,0,.3);
+}
+
+.shadow {
+  width: 120px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  margin: 230px auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: shadow 1.5s ease-in-out alternate infinite;
+          animation: shadow 1.5s ease-in-out alternate infinite;
+}
+
+.text{
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  font-size: 3em;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(75px);
+            transform: scale(0.8) translateY(75px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(75px);
+            transform: scale(0.8) translateY(75px);
+  }
+}
+@-webkit-keyframes ghost {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px)
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(-40px);
+            transform: scale(1) translateY(-40px)
+  }
+}
+@keyframes ghost {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px)
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(-40px);
+            transform: scale(1) translateY(-40px)
+  }
+}
+.error-main{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    /* position: absolute; */
+}
+.error-main h2 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: #febb1e;
+    font-weight: bold;
+}
+.error-main h6 {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.error-main .error {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 10vw;
+  color: rgba(0,0,0,.03);
+  font-size: 25vw;
+  text-align: center;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+/*----- 26. Pagination -----*/
 
 .clear:after, .pagination:after, .clear:before, .pagination:before {
     content: "";
@@ -3839,7 +4299,7 @@ img.service-center-img {
     font-size: 14px;
 }
 
-/*----- F. Blog -----*/
+/*----- 27. Blog -----*/
 
 .side-searchbar, .side-search-category, .side-popular-tags, .side-recent-post {
     width: 100%;
@@ -4344,7 +4804,7 @@ blockquote::after {
     content: "";
 }
 
-/*----- E. Pricing Table -----*/
+/*----- 28. Pricing Table -----*/
 
 .pricing-container.full-width {
     width: 100%;
@@ -4999,7 +5459,7 @@ blockquote::after {
     }
 }
 
-/*----- A. Contact Us Page -----*/
+/*----- 29. Contact Us Page -----*/
 
 .contact-info-details {
     padding: 15px;
@@ -5147,7 +5607,7 @@ blockquote::after {
     color: #fff;
 }
 
-/*----- B. Google Map -----*/
+/*----- 30. Google Map -----*/
 
 #map, .page_map {
     height: 550px
@@ -5170,7 +5630,7 @@ blockquote::after {
     display: none
 }
 
-/*----- C. Back to Top -----*/
+/*----- 31. Back to Top -----*/
 
 #toTopBtn {
     display: none;
@@ -5203,7 +5663,7 @@ blockquote::after {
     margin-bottom: 5px;
 }
 
-/*----- D. Footer -----*/
+/*----- 32. Footer -----*/
 
 footer.footer {
     /*position: fixed;*/

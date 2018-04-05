@@ -14,6 +14,23 @@
         background: #fff;
         padding: 0;
     }
+    .projects-details-page ul.project-details_nav > li > a.active {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .projects-details-page ul.project-details_nav > li > a{
+        font-size: 13px;
+        padding: 10px
+    }
+    .projects-details-page ul.project-details_nav{
+        padding: 0
+    }
+    .project-brief-details.project-info {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 30px
+    }
     img.service-center-img {
         margin: 10% auto 0;
         display: block;
