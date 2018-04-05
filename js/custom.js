@@ -352,7 +352,7 @@ $(document).ready(function($) {
     });
 })(jQuery, window, document);
 // 13. End Project Demo One
-// 14. Full Screen Projects Demo Two
+// 14. Start Full Screen Projects Demo Two
 (function($, window, document, undefined) {
     'use strict';
 
@@ -424,8 +424,8 @@ $(document).ready(function($) {
         },
     });
 })(jQuery, window, document);
-// 14. Full Screen Projects Demo Two
-// 15. Gallery Demo One
+// 14. End Full Screen Projects Demo Two
+// 15. Start Gallery Demo One
 (function($, window, document, undefined) {
     'use strict';
 
@@ -477,7 +477,10 @@ $(document).ready(function($) {
     });
 })(jQuery, window, document);
 
-// 15. Gallery Demo Two
+// 15. End Gallery Demo Two
+// 16. Start Project Detail Slider
+
+// 16. End Project Detail Slider
 // 12. Start Google Map
 google.maps.event.addDomListener(window, 'load', init);
 
